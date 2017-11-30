@@ -1,29 +1,40 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿public class PlayerInput {
+    //Vector2 lookDir; //si moving esta en true mandar 2 floats
 
-public class PlayerInput {
+    public bool Up; //{ get; private set; }
 
-	//Vector2 lookDir; //si moving esta en true mandar 2 floats
-	public bool up;
-	public bool down;
-	public bool left;
-	public bool right;
-	public bool shoot;
+    public bool Left; // { get; private set; }
 
-	public void Save(BitBuffer buffer) {
-		buffer.PutBit (up);
-		buffer.PutBit (down);
-		buffer.PutBit (left);
-		buffer.PutBit (right);
-		buffer.PutBit (shoot);
-	}
-		
-	public void Load(BitBuffer buffer) {
-		up = buffer.GetBit ();
-		down = buffer.GetBit ();
-		left = buffer.GetBit ();
-		right = buffer.GetBit ();
-		shoot = buffer.GetBit ();
-	}
+    public bool Down; // { get; private set; }
+
+    public bool Right; //{ get; private set; }
+
+    public bool Shoot; //{ get; private set; }
+
+    public PlayerInput() {
+    }
+
+    public PlayerInput(bool up, bool left, bool down, bool right, bool shoot) {
+        Up = up;
+        Left = left;
+        Down = down;
+        Right = right;
+        Shoot = shoot;
+    }
+
+    public void Save(BitBuffer buffer) {
+        buffer.PutBit(Up);
+        buffer.PutBit(Down);
+        buffer.PutBit(Left);
+        buffer.PutBit(Right);
+        buffer.PutBit(Shoot);
+    }
+
+    public void Load(BitBuffer buffer) {
+        Up = buffer.GetBit();
+        Down = buffer.GetBit();
+        Left = buffer.GetBit();
+        Right = buffer.GetBit();
+        Shoot = buffer.GetBit();
+    }
 }

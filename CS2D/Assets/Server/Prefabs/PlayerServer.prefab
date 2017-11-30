@@ -205,9 +205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13f131e0a3cef487c98d78600ea1a1f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
   maxSpeed: 10
-  showVisualRepresentation: 0
+  showVisualRepresentation: 1
   visualRepresentationGO: {fileID: 1795382931138354}
 --- !u!136 &136755031382766274
 CapsuleCollider:

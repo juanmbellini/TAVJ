@@ -1,20 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
+    public PlayerInput PlayerInput; // { get; set; }
 
-	PlayerInput playerInput;
+    public void Update() {
+        var up = Input.GetKey(KeyCode.W);
+        var left = Input.GetKey(KeyCode.A);
+        var down = Input.GetKey(KeyCode.S);
+        var right = Input.GetKey(KeyCode.D);
+        var shoot = Input.GetKey(KeyCode.K);
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if (Input.GetKey (KeyCode.W)) {
-			
-		}
-	}
+        PlayerInput = new PlayerInput(up, left, down, right, shoot);
+    }
 }

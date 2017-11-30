@@ -1,16 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerNetworkView : MonoBehaviour {
+//    public int PlayerId { get; set; }
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public int PlayerId;
+
+    public void UpdatePosition(Vector2 position) {
+        transform.position = position;
+    }
 }

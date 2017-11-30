@@ -55,16 +55,16 @@ public class Player : MonoBehaviour {
 		int vertical = 0;
 		int horizontal = 0;
 
-		if (input.up) {
+		if (input.Up) {
 			vertical += 1;
 		}
-		if (input.down) {
+		if (input.Down) {
 			vertical -= 1;
 		}
-		if (input.left) {
+		if (input.Left) {
 			horizontal -= 1;
 		}
-		if (input.right) {
+		if (input.Right) {
 			horizontal += 1;
 		}
 

@@ -3,40 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameData {
+    public float Time;
+    public List<PlayerData> PlayersData;
 
-	float time;
-	List<PlayerData> playersData = new List<PlayerData>();
+    public GameData() {
+        PlayersData = new List<PlayerData>();
+    }
 
-	public void Save(BitBuffer bitBuffer) {
-		bitBuffer.PutFloat (time);
-		bitBuffer.PutInt (playersData.Count);
-		for (int i = 0; i < playersData.Count; i++) {
-			playersData [i].Save (bitBuffer); 
-		}
-	}
 
-	public void Load(BitBuffer bitBuffer) {
-		time = bitBuffer.GetFloat ();
-		int playerCount = bitBuffer.GetInt ();
-		for (int i = 0; i < playerCount; i++) {
-			PlayerData playerData = new PlayerData ();
-			playerData.Load (bitBuffer);
-			playersData.Add (playerData);
-		}
-	}
+    public void Save(BitBuffer bitBuffer) {
+        bitBuffer.PutFloat(Time);
+        bitBuffer.PutInt(PlayersData.Count);
+        foreach (var playerData in PlayersData) {
+            playerData.Save(bitBuffer);
+        }
+    }
 
-	public List<PlayerData> Players {
-		get {
-			return playersData;
-		}
-	}
+    public void Load(BitBuffer bitBuffer) {
+        Time = bitBuffer.GetFloat();
+        var playerCount = bitBuffer.GetInt();
+        for (var i = 0; i < playerCount; i++) {
+            var playerData = new PlayerData();
+            playerData.Load(bitBuffer);
+            PlayersData.Add(playerData);
+        }
+    }
 
-	public float Time {
-		get {
-			return time;
-		}
-		set {
-			time = value;
-		}
-	}
+    public List<PlayerData> Players {
+        get { return PlayersData; }
+    }
 }
