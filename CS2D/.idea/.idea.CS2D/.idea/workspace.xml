@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ab06d46-1c3a-4ca5-9eaf-089e1628d2c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.CS2D/.idea/contentModel.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.CS2D/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.CS2D/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.CS2D/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.CS2D/riderModule.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Client.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Client/PreFab.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Resources/Aux.prefab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Resources/Aux.prefab.meta" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Assets/Scripts/NetworkObjects.meta" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains.meta" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Assets/Scripts/UI.meta" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scene/Game.unity" afterPath="$PROJECT_DIR$/Assets/Scene/Game.unity" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Client.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Client.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Client/PlayerController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Client/PlayerController.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Client/PlayerNetworkView.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Client/PlayerNetworkView.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Server/GameData.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Server/GameData.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Server/Player.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Server/Player.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Server/Prefabs/PlayerServer.prefab" afterPath="$PROJECT_DIR$/Assets/Server/Prefabs/PlayerServer.prefab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" />
-    </list>
+    <list default="true" id="4ab06d46-1c3a-4ca5-9eaf-089e1628d2c2" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -765,12 +741,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512049784307</updated>
       <workItem from="1512049786568" duration="14217000" />
-      <workItem from="1512074638424" duration="6624000" />
+      <workItem from="1512074638424" duration="6856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20841000" />
+    <option name="totallyTimeSpent" value="21073000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
